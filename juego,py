@@ -1,0 +1,14 @@
+import pygame
+import sys
+pygame.init()
+
+ventana_tamanio=(800,500)
+
+ventana=pygame.display.set_mode((ventana_tamanio))
+
+while True:
+    for i in pygame.event.get():
+        print(i)
+        if i.type == pygame.QUIT:
+            sys.exit()
+
