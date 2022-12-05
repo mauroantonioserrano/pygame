@@ -2,6 +2,12 @@ import pygame
 import sys
 pygame.init()
 
+#colores
+negro=(0,0,0)
+blanco=(255,255,255)
+rojo=(255,0,0)
+verde=(0,90,0)
+azul=(0,0,250)
 ventana_tamanio=(800,500)
 
 ventana=pygame.display.set_mode((ventana_tamanio))
@@ -11,4 +17,12 @@ while True:
         print(i)
         if i.type == pygame.QUIT:
             sys.exit()
+
+    ventana.fill(verde)
+
+    pygame.draw.line(ventana,blanco,[30,120],[120,120],8)
+    pygame.draw.rect(ventana,rojo,(150,100,100,100))
+    pygame.draw.circle(ventana,azul,(300,120),35)
+    pygame.draw.polygon(ventana,azul,[(140,400),(90,290),(340,300)])
+    pygame.display.flip()
 
