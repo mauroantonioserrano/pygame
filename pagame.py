@@ -18,10 +18,17 @@ while True:
             sys.exit()
 
     ventanita.fill(azul)
-    pygame.draw.line(ventanita,rojo,[50,200], [200,200], 8)
-    pygame.draw.rect(ventanita,negro,(100,100,40,40))
-    pygame.draw.circle(ventanita,blanco,(300,100),20)
-    pygame.draw.polygon(ventanita,verde,[(500,100),(550,150),(600,50)])
+    for i in range(100,800,100):
+        pygame.draw.rect(ventanita,blanco,(i,20,60,60))
+
+    for e in range(200,800,100):
+        pygame.draw.line(ventanita,rojo,[20,i],[i,i])
+    
+    
+    # pygame.draw.line(ventanita,rojo,[50,200], [200,200], 8)
+    # pygame.draw.rect(ventanita,negro,(100,100,40,40))
+    # pygame.draw.circle(ventanita,blanco,(300,100),20)
+    # pygame.draw.polygon(ventanita,verde,[(500,100),(550,150),(600,50)])
 
     pygame.display.flip()
 
