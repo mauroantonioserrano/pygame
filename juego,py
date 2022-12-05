@@ -20,9 +20,19 @@ while True:
 
     ventana.fill(verde)
 
-    pygame.draw.line(ventana,blanco,[30,120],[120,120],8)
-    pygame.draw.rect(ventana,rojo,(150,100,100,100))
-    pygame.draw.circle(ventana,azul,(300,120),35)
-    pygame.draw.polygon(ventana,azul,[(140,400),(90,290),(340,300)])
+    # pygame.draw.line(ventana,blanco,[30,120],[120,120],8)
+    # pygame.draw.rect(ventana,rojo,(150,100,100,100))
+    # pygame.draw.circle(ventana,azul,(300,120),35)
+    # pygame.draw.polygon(ventana,azul,[(140,400),(90,290),(340,300)])
+    for i in range(100,700,100):
+        pygame.draw.rect(ventana,negro,(i,60,80,70))
+        pygame.draw.line(ventana,azul,(i,160),(i,400),5)
+
+        
+    for i in range(200,800,100):
+        pygame.draw.line(ventana,rojo,(i,80),(i,120),5)
+
+
+     
     pygame.display.flip()
 
