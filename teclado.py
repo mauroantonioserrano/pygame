@@ -19,23 +19,23 @@ while True:
             sys.exit()
 
         if i.type == pygame.KEYDOWN:
-            if i.key == pygame.K_LEFT:
+            if i.key == pygame.K_LEFT or i.key == pygame.K_a:
                 velocidadx=-3
-            elif i.key ==pygame.K_RIGHT:
+            elif i.key ==pygame.K_RIGHT or i.key == pygame.K_d:
                 velocidadx=3
-            elif i.key == pygame.K_UP:
+            elif i.key == pygame.K_UP or i.key == pygame.K_w:
                 velocidady=-3
-            elif i.key == pygame.K_DOWN:
+            elif i.key == pygame.K_DOWN or i.key == pygame.K_s:
                 velocidady=3
 
         if i.type == pygame.KEYUP:
-            if i.key == pygame.K_LEFT:
+            if i.key == pygame.K_LEFT or i.key == pygame.K_a:
                 velocidadx=0
-            elif i.key ==pygame.K_RIGHT:
+            elif i.key ==pygame.K_RIGHT or i.key == pygame.K_d:
                 velocidadx=0
-            elif i.key == pygame.K_UP:
+            elif i.key == pygame.K_UP or i.key == pygame.K_w:
                 velocidady=0
-            elif i.key == pygame.K_DOWN:
+            elif i.key == pygame.K_DOWN or i.key == pygame.K_s:
                 velocidady=0
 
         
