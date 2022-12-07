@@ -8,7 +8,7 @@ ventana=pygame.display.set_mode(dimension)
 cerrar=False
 
 fondo=pygame.image.load("paisaje.jpg").convert()
-jugador=pygame.image.load("descarga.png")
+jugador=pygame.image.load("descarga.png").convert()
 jugador.set_colorkey(blanco)
 
 pygame.mouse.set_visible(0)
