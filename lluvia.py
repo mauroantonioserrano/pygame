@@ -37,5 +37,7 @@ while True:
         if l[1]>500 :
             l[1]=0
     
+    
+    
     pygame.display.flip()
     reloj.tick(30)
